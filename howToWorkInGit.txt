@@ -1,0 +1,176 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Pradeep>git --version
+git version 2.14.1.windows.1
+
+C:\Users\Pradeep>git config --global user.email "pradip.getjava@gmail.com"
+
+C:\Users\Pradeep>git config --global user.name "PradipBurnwal"
+
+C:\Users\Pradeep>d:
+
+D:\>E:
+
+E:\>cd /Git/MyFolder
+The system cannot find the path specified.
+
+E:\>..cd
+'..cd' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\>cd /Git/MyFolder
+
+E:\Git\MyFolder>git init
+Initialized empty Git repository in E:/Git/MyFolder/.git/
+
+E:\Git\MyFolder>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+E:\Git\MyFolder>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        myfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\Git\MyFolder>git add myfile.txt
+
+E:\Git\MyFolder>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   myfile.txt
+
+
+E:\Git\MyFolder>git commit -m "added myfile.txt"
+[master (root-commit) f77c3e9] added myfile.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 myfile.txt
+
+E:\Git\MyFolder>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\Git\MyFolder>touch index.html
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\Git\MyFolder>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   myfile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E:\Git\MyFolder>git add .
+
+E:\Git\MyFolder>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html.txt
+        modified:   myfile.txt
+
+
+E:\Git\MyFolder>git commit -m "added index.html.txt | modidied myfile.txt"
+[master 8a68597] added index.html.txt | modidied myfile.txt
+ 2 files changed, 1 insertion(+)
+ create mode 100644 index.html.txt
+
+E:\Git\MyFolder>git status
+On branch master
+nothing to commit, working tree clean
+
+E:\Git\MyFolder>git remote add origin https://github.com/PradipBurnwal/Repo1.git
+
+E:\Git\MyFolder>git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 510 bytes | 127.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/PradipBurnwal/Repo1.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+E:\Git\MyFolder>git log
+commit 8a685977c754b12d38ce1439c4bce45258715716 (HEAD -> master, origin/master)
+Author: PradipBurnwal <pradip.getjava@gmail.com>
+Date:   Wed Aug 30 21:01:41 2017 +0530
+
+    added index.html.txt | modidied myfile.txt
+
+commit f77c3e95322a5bf5eedcbe463624335fe93673d2
+Author: PradipBurnwal <pradip.getjava@gmail.com>
+Date:   Wed Aug 30 20:53:47 2017 +0530
+
+    added myfile.txt
+
+E:\Git\MyFolder>git --help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+E:\Git\MyFolder>
