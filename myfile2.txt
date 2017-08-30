@@ -1,0 +1,13 @@
+ Volume in drive E is Miscellaneous
+ Volume Serial Number is 6A2D-F7FB
+
+ Directory of E:\Git\MyFolder
+
+08/30/2017  10:13 PM    <DIR>          .
+08/30/2017  10:13 PM    <DIR>          ..
+08/30/2017  09:27 PM             5,610 howToWorkInGit.txt
+08/30/2017  09:51 PM                42 index.html
+08/30/2017  09:26 PM                10 myfile.txt
+08/30/2017  10:13 PM                 0 myfile2.txt
+               4 File(s)          5,662 bytes
+               2 Dir(s)  26,022,313,984 bytes free
